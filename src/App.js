@@ -2,7 +2,7 @@ import { useDispatch, useSelector } from "react-redux";
 import "./App.css";
 import React, { useEffect } from "react";
 import Quora from "./components/Quora";
-import Login from "./components/auth/Login";
+// import Login from "./components/auth/Login";
 import { login, selectUser } from "./feature/userSlice";
 import { auth } from "./firebase";
 import { onAuthStateChanged } from "firebase/auth";
@@ -32,7 +32,7 @@ useEffect(()=>{
 
   return( <div className="App">
     
-    {user ? <Quora /> : <Login />}
+    { <Quora /> }
     </div>
   );
 }
